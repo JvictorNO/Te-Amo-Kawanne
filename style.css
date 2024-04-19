@@ -62,43 +62,43 @@ section h2 {
 }
 
 .txt-anim span.nofix::before{
-    content: "";
+    content: " Kawanne";
     width: 100%;
     position: relative;
     color: #ff007b;
-    animation:palavras 40s infinite;
+    animation:palavras 44s;
 }
 
 @keyframes palavras {
     0%, 10% {
-        content: "Vida";
+        content: " Vida";
     }
     10%, 20% {
-        content: "Minha Princesa";
+        content: " Minha Princesa";
     }
     20%, 30% {
-        content: "Kawanne";
+        content: " Kawanne";
     }
     30%, 40% {
-        content: "Meu Amor";
+        content: " Meu Amor";
     }
     40%, 50% {
-        content: "Meu Bebê";
+        content: " Meu Bebê";
     }
     50%, 60% {
-        content: "Meu Anjo";
+        content: " Meu Anjo";
     }
     60%, 70% {
-        content: "Minha Flor";
+        content: " Minha Flor";
     }
     70%, 80% {
-        content: "Coração";
+        content: " Coração";
     }
     80%, 90% {
-        content: "Meu Tesouro";
+        content: " Meu Tesouro";
     }
     90%, 100% {
-        content: "Vida";
+        content: " Vida";
     }
 
 }
