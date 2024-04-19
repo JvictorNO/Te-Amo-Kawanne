@@ -1,5 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 150px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,14 +40,69 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 section h2 {
     color: #fff;
-    font-size: 8em;
+    font-size: 2em;
     text-transform: uppercase;
     z-index: 3;
 }
+
+.txt-anim {
+    font-weight: 300;
+}
+
+.txt-anim span.fix {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1em;
+    position: relative;
+}
+
+.txt-anim span.nofix::before{
+    content: "";
+    width: 100%;
+    position: relative;
+    color: #ff007b;
+    animation:palavras 45s infinite;
+}
+
+@keyframes palavras {
+    0%, 10% {
+        content: "Vida";
+    }
+    10%, 20% {
+        content: "Minha Princesa";
+    }
+    20%, 30% {
+        content: "Kawanne";
+    }
+    30%, 40% {
+        content: "Meu Amor";
+    }
+    40%, 50% {
+        content: "Meu Bebê";
+    }
+    50%, 60% {
+        content: "Meu Anjo";
+    }
+    60%, 70% {
+        content: "Minha Flor";
+    }
+    70%, 80% {
+        content: "Coração";
+    }
+    80%, 90% {
+        content: "Meu Tesouro";
+    }
+    90%, 100% {
+        content: "Vida";
+    }
+
+}
+
 
 section .set {
     position: absolute;
@@ -113,19 +192,19 @@ section .set div:nth-child(8) {
 }
 
 .set1 {
-    transform: scale(1.5) rotateX(180deg);
+    transform: scale(1) rotateX(180deg);
     filter: blur(1px);
     z-index: 4;
 }
 
 .set2 {
-    transform: scale(2) rotateY(180deg);
+    transform: scale(1.5) rotateY(180deg);
     filter: blur(2px);
     z-index: 2;
 }
 
 .set3 {
-    transform: scale(0.8) rotateX(180deg);
+    transform: scale(0.3) rotateX(180deg);
     filter: blur(4px);
     z-index: 1;
 }

@@ -7,12 +7,15 @@
     <title>MyLoveDeclaration</title>
 </head>
 <body>
-    <section>
 
-        <audio id="musicplayer" src="musica.mp3"></audio>
+    <button onclick="startAnimation()">Clique Aqui</button>
 
-        <h2>
-            Te Amo Kawanne!
+    <section id="animation-section">
+
+        <audio id="musicplayer" loop src="musica.mp3"></audio>
+
+        <h2 class="txt-anim">
+            <span class="fix">Te amo</span> <span class="nofix"></span>!
         </h2>
         <div class="set set1">
             <div><img src="images/leaves1.png"></div>
@@ -50,11 +53,28 @@
     </section>
 
     <script>
-        function playMusic() {
+
+        function showSection() {
+
+            // Exibe a seção
+            var section = document.getElementById("animation-section");
+            section.style.display = "flex"; // Exibe a seção quando o botão é clicado
+
+            // Inicia a música
             var audio = document.getElementById("musicplayer");
             audio.play();
+
+            var botao = document.querySelector("button");
+            botao.style.display = "none";
+
         }
-        document.addEventListener("click", playMusic);
+
+        function startAnimation() {
+            setTimeout(function() {
+                showSection();
+            }, 2000);
+        }
+
     </script>
 
 </body>
